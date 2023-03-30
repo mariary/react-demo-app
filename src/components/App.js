@@ -20,7 +20,9 @@ const router = createBrowserRouter([
     path: '/post',
     element: <PostScreen/>
   }
-])
+], {
+  basename: process.env.PUBLIC_URL
+})
 
 function App () {
   return (
